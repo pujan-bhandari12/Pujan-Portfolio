@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pujan Bhandari — Quality Assurance Engineer</title>
+    <meta name="description" content="Portfolio of Pujan Bhandari, Quality Assurance Engineer specializing in Core Banking System (CBS), FinTech, KYC compliance, Selenium automation, k6 load testing, and SQL data validation.">
+    <meta name="author" content="Pujan Bhandari">
+    
+    <!-- Open Graph / Meta -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Pujan Bhandari | QA Engineer">
+    <meta property="og:description" content="Specializing in Core Banking System (CBS) and FinTech testing, KYC compliance workflows, Selenium WebDriver, k6, Postman, and SQL validation.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2309090b'/><text x='50' y='65' font-family='sans-serif' font-size='50' font-weight='bold' fill='%23fafafa' text-anchor='middle'>PB</text></svg>">
+
+    <!-- Fonts: Space Grotesk (Headings), Inter (Body), JetBrains Mono (Accents/Code) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Reading Progress Bar -->
+    <div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+
+    <!-- Navigation Header -->
+    <header class="site-header" id="siteHeader">
+        <div class="header-inner container">
+            <a href="#hero" class="brand" aria-label="Pujan Bhandari Home">
+                <span class="brand-monogram">PB</span>
+                <span class="brand-name">Pujan Bhandari</span>
+                <span class="brand-badge"><span class="pulse-dot"></span>QA Engineer</span>
+            </a>
+
+            <nav class="desktop-nav" aria-label="Main Navigation">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <!-- Theme Toggle (Dark/Light Monochrome) -->
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle Monochrome Theme" title="Toggle Light / Dark theme">
+                    <svg class="sun-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+
+                <a href="QA CV.pdf" download="Pujan_Bhandari_QA_CV.pdf" class="btn btn-outline btn-sm resume-btn">
+                    <span>CV</span>
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                </a>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+        <div class="mobile-drawer-inner">
+            <ul class="mobile-nav-list">
+                <li><a href="#about" class="mobile-nav-link"><span>01</span>About</a></li>
+                <li><a href="#skills" class="mobile-nav-link"><span>02</span>Skills</a></li>
+                <li><a href="#experience" class="mobile-nav-link"><span>03</span>Experience</a></li>
+                <li><a href="#projects" class="mobile-nav-link"><span>04</span>Projects</a></li>
+                <li><a href="#certifications" class="mobile-nav-link"><span>05</span>Certifications & Education</a></li>
+                <li><a href="#contact" class="mobile-nav-link"><span>06</span>Contact</a></li>
+            </ul>
+            <div class="mobile-drawer-footer">
+                <a href="QA CV.pdf" download="Pujan_Bhandari_QA_CV.pdf" class="btn btn-primary w-full">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Download Full CV
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <main id="mainContent">
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="container hero-container">
+                <div class="hero-meta-row">
+                    <div class="status-pill">
+                        <span class="pulse-indicator"></span>
+                        <span class="status-text">Available for QA & Automation Engineering Roles</span>
+                    </div>
+                    <div class="geo-tag">
+                        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <span>Kirtipur, Kathmandu, Nepal</span>
+                    </div>
+                </div>
+
+                <div class="hero-header">
+                    <p class="hero-eyebrow">QUALITY ASSURANCE ENGINEER // FINTECH & CBS</p>
+                    <h1 class="hero-title">
+                        Pujan Bhandari
+                    </h1>
+                    <p class="hero-lead">
+                        Ensuring zero-defect resilience for Core Banking Systems (CBS) and FinTech platforms. Blending manual rigor with Selenium WebDriver automation, k6 API concurrency testing, and deep SQL data verification.
+                    </p>
+                </div>
+
+                <div class="hero-cta-group">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View Projects</span>
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                    <a href="QA CV.pdf" download="Pujan_Bhandari_QA_CV.pdf" class="btn btn-secondary">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        <span>Download CV</span>
+                    </a>
+                    <button class="btn btn-ghost copy-btn" data-copy="bhandaripujan321@gmail.com" title="Click to copy email">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                        </svg>
+                        <span class="copy-label">Copy Email</span>
+                    </button>
+                </div>
+
+                <!-- Bento Metrics Grid -->
+                <div class="hero-stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-mono-tag">01 // DOMAIN</div>
+                        <div class="stat-value">Core Banking</div>
+                        <div class="stat-desc">Specialized in CBS, KYC 360, customer onboarding & regulatory workflows</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-mono-tag">02 // AUTOMATION</div>
+                        <div class="stat-value">Selenium & Java</div>
+                        <div class="stat-desc">End-to-end UI regression suites, master setup validation & Python scripting</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-mono-tag">03 // PERFORMANCE</div>
+                        <div class="stat-value">k6 & Postman</div>
+                        <div class="stat-desc">High-volume load testing, concurrency limits, API schemas & payload validation</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-mono-tag">04 // INTEGRITY</div>
+                        <div class="stat-value">SQL Validation</div>
+                        <div class="stat-desc">Complex query verification, data persistence audits & schema constraint checks</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About / Professional Summary -->
+        <section class="section about-section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">[ 01 — SUMMARY ]</span>
+                    <h2 class="section-title">Professional Summary</h2>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-narrative">
+                        <p class="summary-highlight">
+                            Quality Assurance Engineer with hands-on experience testing <strong>Core Banking System (CBS)</strong> and <strong>FinTech applications</strong>, specializing in customer onboarding and KYC compliance workflows.
+                        </p>
+                        <p class="summary-body">
+                            Combines manual functional and regression testing with Selenium WebDriver (Java) automation, k6 API load testing, Postman API validation, and SQL data verification. Works closely with Business Analysts and developers to define edge cases, improve test coverage, and report well-documented defects.
+                        </p>
+
+                        <div class="focus-pillars">
+                            <div class="pillar-item">
+                                <div class="pillar-number">01</div>
+                                <div class="pillar-content">
+                                    <h4>KYC 360 & Regulatory Compliance</h4>
+                                    <p>Deep expertise validating multi-tier KYC lifecycles, document approvals, and strict regulatory compliance requirements across banking architectures.</p>
+                                </div>
+                            </div>
+                            <div class="pillar-item">
+                                <div class="pillar-number">02</div>
+                                <div class="pillar-content">
+                                    <h4>Full Lifecycle Test Automation</h4>
+                                    <p>Building automated regression workflows using Selenium WebDriver with Java and Python, ensuring continuous release stability.</p>
+                                </div>
+                            </div>
+                            <div class="pillar-item">
+                                <div class="pillar-number">03</div>
+                                <div class="pillar-content">
+                                    <h4>Concurrency & High-Load Testing</h4>
+                                    <p>Developing JavaScript-based k6 scripts to evaluate endpoint latency, concurrency barriers, and throughput bottlenecks under production load.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-aside">
+                        <div class="aside-card contact-snippet">
+                            <h3 class="aside-card-title">Quick Details</h3>
+                            <dl class="meta-list">
+                                <div class="meta-row">
+                                    <dt>Location</dt>
+                                    <dd>Kirtipur, Kathmandu, Nepal</dd>
+                                </div>
+                                <div class="meta-row">
+                                    <dt>Current Role</dt>
+                                    <dd>QA Trainee @ InfoDevelopers</dd>
+                                </div>
+                                <div class="meta-row">
+                                    <dt>Phone</dt>
+                                    <dd><a href="tel:+9779847363337">+977 9847363337</a></dd>
+                                </div>
+                                <div class="meta-row">
+                                    <dt>Email</dt>
+                                    <dd><a href="mailto:bhandaripujan321@gmail.com">bhandaripujan321@gmail.com</a></dd>
+                                </div>
+                                <div class="meta-row">
+                                    <dt>GitHub</dt>
+                                    <dd><a href="https://github.com/pujan-bhandari12" target="_blank" rel="noopener noreferrer">github.com/pujan-bhandari12 ↗</a></dd>
+                                </div>
+                                <div class="meta-row">
+                                    <dt>LinkedIn</dt>
+                                    <dd><a href="https://www.linkedin.com/in/pujan-bhandari-ba15b2175/" target="_blank" rel="noopener noreferrer">linkedin.com/in/pujan-bhandari ↗</a></dd>
+                                </div>
+                            </dl>
+                            <div class="aside-card-action">
+                                <a href="#contact" class="btn btn-outline w-full">Initiate Contact</a>
+                            </div>
+                        </div>
+
+                        <div class="aside-card quote-card">
+                            <div class="quote-symbol">“</div>
+                            <p class="quote-text">Quality is not an afterthought; it is built by questioning edge cases, understanding compliance, and executing tests with engineering precision.</p>
+                            <span class="quote-author">— Pujan Bhandari</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Matrix -->
+        <section class="section skills-section" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">[ 02 — CAPABILITIES ]</span>
+                    <h2 class="section-title">Technical Skills Matrix</h2>
+                    <p class="section-subtitle">Structured competencies based directly on production engineering and verification standards.</p>
+                </div>
+
+                <div class="skills-bento-grid">
+                    <!-- Category 1: Testing -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="category-mono">01 // CORE DISCIPLINE</span>
+                                <h3 class="category-title">Testing Methodologies</h3>
+                            </div>
+                        </div>
+                        <p class="category-desc">Systematic verification protocols ensuring total requirements traceability and defect isolation.</p>
+                        <div class="tag-cloud">
+                            <span class="skill-pill">Manual Testing</span>
+                            <span class="skill-pill">Functional Testing</span>
+                            <span class="skill-pill">Regression Testing</span>
+                            <span class="skill-pill">Test Case Design</span>
+                            <span class="skill-pill">Edge-Case Analysis</span>
+                            <span class="skill-pill">Defect Reporting</span>
+                            <span class="skill-pill">Root Cause Analysis</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 2: Test Automation -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <polyline points="16 18 22 12 16 6"></polyline>
+                                    <polyline points="8 6 2 12 8 18"></polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="category-mono">02 // AUTOMATION</span>
+                                <h3 class="category-title">Test Automation</h3>
+                            </div>
+                        </div>
+                        <p class="category-desc">Robust test scripts and framework architecture eliminating repetitive manual overhead.</p>
+                        <div class="tag-cloud">
+                            <span class="skill-pill">Selenium WebDriver</span>
+                            <span class="skill-pill">Java</span>
+                            <span class="skill-pill">Python</span>
+                            <span class="skill-pill">E2E Web Automation</span>
+                            <span class="skill-pill">Page Object Modeling</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 3: API & Performance Testing -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="category-mono">03 // API & PERFORMANCE</span>
+                                <h3 class="category-title">API & Performance Testing</h3>
+                            </div>
+                        </div>
+                        <p class="category-desc">Validating contract integrity, HTTP status codes, payloads, and high-concurrency thresholds.</p>
+                        <div class="tag-cloud">
+                            <span class="skill-pill">Postman</span>
+                            <span class="skill-pill">REST API Testing</span>
+                            <span class="skill-pill">k6 Load Testing</span>
+                            <span class="skill-pill">Apache JMeter</span>
+                            <span class="skill-pill">Latency & Concurrency Analysis</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 4: Database -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="category-mono">04 // DATA INTEGRITY</span>
+                                <h3 class="category-title">Database & SQL</h3>
+                            </div>
+                        </div>
+                        <p class="category-desc">Direct backend validation ensuring relational integrity, schema compliance, and persistence.</p>
+                        <div class="tag-cloud">
+                            <span class="skill-pill">SQL Queries</span>
+                            <span class="skill-pill">Data Validation</span>
+                            <span class="skill-pill">Data Analysis</span>
+                            <span class="skill-pill">Persistence Verification</span>
+                            <span class="skill-pill">Constraint Audits</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 5: Domain Knowledge -->
+                    <div class="skill-category-card domain-card">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="category-mono">05 // BUSINESS DOMAIN</span>
+                                <h3 class="category-title">Banking & FinTech Domain</h3>
+                            </div>
+                        </div>
+                        <p class="category-desc">Deep understanding of mission-critical financial systems where software quality is strictly bound to regulatory compliance.</p>
+                        <div class="tag-cloud">
+                            <span class="skill-pill highlight-pill">Core Banking System (CBS)</span>
+                            <span class="skill-pill highlight-pill">KYC 360</span>
+                            <span class="skill-pill highlight-pill">Customer Onboarding</span>
+                            <span class="skill-pill highlight-pill">Regulatory Compliance</span>
+                            <span class="skill-pill highlight-pill">Customer Master Creation</span>
+                            <span class="skill-pill highlight-pill">Multi-Tier Approvals</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Experience -->
+        <section class="section experience-section" id="experience">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">[ 03 — CAREER ]</span>
+                    <h2 class="section-title">Professional Experience</h2>
+                    <p class="section-subtitle">Real-world Quality Assurance engineering in high-stakes Core Banking and FinTech applications.</p>
+                </div>
+
+                <div class="timeline">
+                    <!-- Role 1: QA Trainee -->
+                    <article class="timeline-item">
+                        <div class="timeline-marker">
+                            <span class="marker-dot"></span>
+                            <span class="marker-line"></span>
+                        </div>
+                        <div class="timeline-card">
+                            <div class="timeline-card-header">
+                                <div>
+                                    <div class="role-badge">Current Position</div>
+                                    <h3 class="role-title">Quality Assurance Trainee</h3>
+                                    <div class="role-company">
+                                        <span class="company-name">InfoDevelopers</span>
+                                        <span class="company-dot">•</span>
+                                        <span class="company-location">Sanepa, Lalitpur, Nepal</span>
+                                    </div>
+                                </div>
+                                <div class="role-period">08/2026 – Present</div>
+                            </div>
+
+                            <ul class="bullet-list">
+                                <li>
+                                    <span class="bullet-icon">›</span>
+                                    <span class="bullet-text">Validate KYC documentation lifecycles, customer onboarding rules, and regulatory compliance requirements across <strong>Core Banking System (CBS)</strong> modules.</span>
+                                </li>
+                                <li>
+                                    <span class="bullet-icon">›</span>
+                                    <span class="bullet-text">Assist in automating end-to-end regression suites for KYC verification and master setup workflows using <strong>Selenium WebDriver and Java</strong>.</span>
+                                </li>
+                                <li>
+                                    <span class="bullet-icon">›</span>
+                                    <span class="bullet-text">Develop and execute JavaScript-based <strong>k6 load test scripts</strong> to measure API response times, concurrency limits, and bottlenecks on high-volume KYC onboarding endpoints.</span>
+                                </li>
+                                <li>
+                                    <span class="bullet-icon">›</span>
+                                    <span class="bullet-text">Verify KYC data persistence with <strong>SQL queries</strong>, and validate RESTful endpoint schemas, response payloads, and error handling in <strong>Postman</strong>.</span>
+                                </li>
+                                <li>
+                                    <span class="bullet-icon">›</span>
+                                    <span class="bullet-text">Log structured defect reports for functional regressions and latency issues, including reproduction steps, screenshots, and <strong>k6 performance metrics</strong>.</span>
+                                </li>
+                            </ul>
+
+                            <div class="role-tags">
+                                <span class="mini-tag">Core Banking</span>
+                                <span class="mini-tag">KYC Compliance</span>
+                                <span class="mini-tag">Selenium WebDriver</span>
+                                <span class="mini-tag">Java</span>
+                                <span class="mini-tag">k6 Load Testing</span>
+                                <span class="mini-tag">Postman</span>
+                                <span class="mini-tag">SQL</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Role 2: QA Intern -->
+                    <article class="timeline-item">
+                        <div class="timeline-marker">
+                            <span class="marker-dot"></span>
+                            <span class="marker-line"></span>
+                        </div>
+                        <div class="timeline-card">
+                            <div class="timeline-card-header">
+                                <div>
+                                    <h3 class="role-title">Quality Assurance Intern</h3>
+                                    <div class="role-company">
+                                        <span class="company-name">InfoDevelopers</span>
+                                        <span class="company-dot">•</span>
+                                        <span class="company-location">Sanepa, Lalitpur, Nepal</span>
+                                    </div>
+                                </div>
+                                <div class="role-period">05/2026 – 08/2026</div>
+                            </div>
+
+                            <ul class="bullet-list">
+                                <li>
+                                    <span class="bullet-icon">›</span>
+                                    <span class="bullet-text">Executed functional test suites for customer onboarding, Customer Master creation, and multi-tier KYC document approval workflows in Core Banking Systems.</span>
+                                </li>
+                                <li>
+                                    <span class="bullet-icon">›</span>
+                                    <span class="bullet-text">Validated regulatory business rules and acceptance criteria to ensure data integrity across customer setup workflows.</span>
+                                </li>
+                                <li>
+                                    <span class="bullet-icon">›</span>
+                                    <span class="bullet-text">Authored test cases and edge-case scenarios based on CBS business rules, regulatory standards, and acceptance criteria.</span>
+                                </li>
+                                <li>
+                                    <span class="bullet-icon">›</span>
+                                    <span class="bullet-text">Identified and reported high-priority UI/UX defects, missing validation rules, and workflow edge cases in Master Setup forms.</span>
+                                </li>
+                                <li>
+                                    <span class="bullet-icon">›</span>
+                                    <span class="bullet-text">Collaborated with Business Analysts and developers to clarify requirements, define edge cases, and increase test coverage.</span>
+                                </li>
+                            </ul>
+
+                            <div class="role-tags">
+                                <span class="mini-tag">Functional Testing</span>
+                                <span class="mini-tag">Customer Master</span>
+                                <span class="mini-tag">Test Case Authoring</span>
+                                <span class="mini-tag">Edge-Case Analysis</span>
+                                <span class="mini-tag">UI/UX Defect Reporting</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Showcase -->
+        <section class="section projects-section" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">[ 04 — WORKS ]</span>
+                    <h2 class="section-title">Selected Projects</h2>
+                    <p class="section-subtitle">Real-world test automation implementations and deep analytical engineering.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: AutomationExercise -->
+                    <article class="project-card">
+                        <div class="project-card-top">
+                            <div class="project-meta-strip">
+                                <span class="project-index">01 // AUTOMATION & API TESTING</span>
+                                <span class="project-type">Full Test Lifecycle</span>
+                            </div>
+                            <h3 class="project-title">
+                                End-to-End QA Project: AutomationExercise E-commerce
+                            </h3>
+                            <p class="project-lead">
+                                Comprehensive quality assurance suite encompassing automated UI testing, REST API validation, load simulation, and formal defect documentation for an end-to-end e-commerce application.
+                            </p>
+                        </div>
+
+                        <div class="project-body">
+                            <h4 class="project-details-title">Key Implementation Highlights:</h4>
+                            <ul class="project-bullet-list">
+                                <li>
+                                    <strong>UI Automation:</strong> Automated end-to-end UI test scenarios for <code>automationexercise.com</code> utilizing Selenium WebDriver and Java.
+                                </li>
+                                <li>
+                                    <strong>API Validation:</strong> Thoroughly tested REST endpoints in Postman, validating HTTP status codes, JSON response schemas, payloads, and edge error handling.
+                                </li>
+                                <li>
+                                    <strong>Load & Stress:</strong> Wrote and executed k6 load test scripts to benchmark API response times and analyze behavior under concurrent virtual users.
+                                </li>
+                                <li>
+                                    <strong>QA Documentation:</strong> Prepared comprehensive test documentation including test cases, traceability matrix, and structured defect reports with reproduction steps.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="project-card-footer">
+                            <div class="tech-tags">
+                                <span class="tech-tag">Selenium WebDriver</span>
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">Postman</span>
+                                <span class="tech-tag">k6</span>
+                                <span class="tech-tag">REST APIs</span>
+                                <span class="tech-tag">Defect Tracking</span>
+                            </div>
+                            <a href="https://github.com/pujan-bhandari12/AutomationExercise" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm project-link-btn">
+                                <span>GitHub Repository</span>
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                                    <polyline points="7 7 17 7 17 17"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Netflix SQL Data Analysis -->
+                    <article class="project-card">
+                        <div class="project-card-top">
+                            <div class="project-meta-strip">
+                                <span class="project-index">02 // DATA ENGINEERING & SQL</span>
+                                <span class="project-type">Database Analysis</span>
+                            </div>
+                            <h3 class="project-title">
+                                Netflix Movies and TV Shows Data Analysis (SQL)
+                            </h3>
+                            <p class="project-lead">
+                                Comprehensive SQL querying and dataset exploration examining content distribution patterns, ratings, temporal release trends, durations, and keyword clustering to derive strategic insights.
+                            </p>
+                        </div>
+
+                        <div class="project-body">
+                            <h4 class="project-details-title">Key Implementation Highlights:</h4>
+                            <ul class="project-bullet-list">
+                                <li>
+                                    <strong>Complex Queries:</strong> Crafted advanced SQL queries featuring multi-table joins, subqueries, aggregations, and window functions to query vast dataset rows.
+                                </li>
+                                <li>
+                                    <strong>Data Validation:</strong> Performed rigorous data cleaning, missing value handling, duplicate elimination, and schema type validation in SQL.
+                                </li>
+                                <li>
+                                    <strong>Distribution Insights:</strong> Analyzed release trends, country-wise content saturation, TV show season distributions, and movie duration metrics.
+                                </li>
+                                <li>
+                                    <strong>Keyword Categorization:</strong> Categorized titles by keyword frequency and genres to reveal content generation trends over time.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="project-card-footer">
+                            <div class="tech-tags">
+                                <span class="tech-tag">SQL</span>
+                                <span class="tech-tag">DataCamp Certified</span>
+                                <span class="tech-tag">Data Validation</span>
+                                <span class="tech-tag">Relational Modeling</span>
+                                <span class="tech-tag">Query Optimization</span>
+                            </div>
+                            <a href="https://github.com/pujan-bhandari12/netflix_sql_project" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm project-link-btn">
+                                <span>GitHub Repository</span>
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                                    <polyline points="7 7 17 7 17 17"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications & Education Section -->
+        <section class="section cert-edu-section" id="certifications">
+            <div class="container">
+                <div class="split-section-grid">
+                    <!-- Certifications Column -->
+                    <div class="split-column">
+                        <div class="section-header">
+                            <span class="section-tag">[ 05 — CREDENTIALS ]</span>
+                            <h2 class="section-title">Certifications</h2>
+                            <p class="section-subtitle">Verified professional credentials in API testing, SQL data engineering, and cloud architecture.</p>
+                        </div>
+
+                        <div class="certs-list">
+                            <!-- Cert 1: Postman -->
+                            <div class="cert-card">
+                                <div class="cert-icon-col">
+                                    <div class="cert-icon">
+                                        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <circle cx="12" cy="8" r="7"></circle>
+                                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="cert-body">
+                                    <div class="cert-date">10/2026</div>
+                                    <h3 class="cert-title">API Testing Path (v12)</h3>
+                                    <div class="cert-issuer">Postman Academy</div>
+                                    <p class="cert-desc">Comprehensive certification validating RESTful API testing, collections, environment variables, automation scripts, and pre-request scripts.</p>
+                                    <div class="cert-action">
+                                        <span class="verified-pill">
+                                            <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                                <polyline points="20 6 9 17 4 12"></polyline>
+                                            </svg>
+                                            Verified Credential
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Cert 2: DataCamp -->
+                            <div class="cert-card">
+                                <div class="cert-icon-col">
+                                    <div class="cert-icon">
+                                        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <circle cx="12" cy="8" r="7"></circle>
+                                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="cert-body">
+                                    <div class="cert-date">11/2025</div>
+                                    <h3 class="cert-title">Associate Data Engineer in SQL</h3>
+                                    <div class="cert-issuer">DataCamp</div>
+                                    <p class="cert-desc">Rigorous credential demonstrating proficiency in PostgreSQL, relational database architecture, query optimization, and data validation pipelines.</p>
+                                    <div class="cert-action">
+                                        <a href="https://www.datacamp.com/completed/statement-of-accomplishment/track/fb568d59b768ac146c1cf6df11356518a6f3017c" target="_blank" rel="noopener noreferrer" class="cert-link">
+                                            <span>Verify Credential</span>
+                                            <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                                <line x1="7" y1="17" x2="17" y2="7"></line>
+                                                <polyline points="7 7 17 7 17 17"></polyline>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Cert 3: AWS -->
+                            <div class="cert-card">
+                                <div class="cert-icon-col">
+                                    <div class="cert-icon">
+                                        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <circle cx="12" cy="8" r="7"></circle>
+                                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="cert-body">
+                                    <div class="cert-date">06/2025</div>
+                                    <h3 class="cert-title">AWS Educate Introduction to Cloud 101</h3>
+                                    <div class="cert-issuer">Amazon Web Services (AWS)</div>
+                                    <p class="cert-desc">Foundational mastery of cloud computing concepts, IAM, AWS compute, storage, networking architectures, and security best practices.</p>
+                                    <div class="cert-action">
+                                        <a href="https://www.credly.com/badges/2d004ce2-4183-42ca-9daf-6af6e9353fb2/linked_in_profile" target="_blank" rel="noopener noreferrer" class="cert-link">
+                                            <span>Verify on Credly</span>
+                                            <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                                <line x1="7" y1="17" x2="17" y2="7"></line>
+                                                <polyline points="7 7 17 7 17 17"></polyline>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Education Column -->
+                    <div class="split-column">
+                        <div class="section-header">
+                            <span class="section-tag">[ 06 — ACADEMICS ]</span>
+                            <h2 class="section-title">Education</h2>
+                            <p class="section-subtitle">Academic foundations in information technology, computer science, and engineering.</p>
+                        </div>
+
+                        <div class="edu-list">
+                            <!-- Edu 1: Bachelor of Engineering in IT -->
+                            <div class="edu-card">
+                                <div class="edu-period">2022 – 2026</div>
+                                <h3 class="edu-degree">Bachelor of Engineering in Information Technology (BE IT)</h3>
+                                <div class="edu-institution">Nepal College of Information Technology (NCIT)</div>
+                                <div class="edu-affil">Affiliated with Pokhara University</div>
+                                <p class="edu-notes">Specialized coursework in Software Engineering, Database Management Systems, Data Structures & Algorithms, Network Security, and Quality Assurance.</p>
+                                <div class="edu-tags">
+                                    <span class="mini-tag">Software Engineering</span>
+                                    <span class="mini-tag">DBMS</span>
+                                    <span class="mini-tag">OOP</span>
+                                    <span class="mini-tag">Pokhara University</span>
+                                </div>
+                            </div>
+
+                            <!-- Edu 2: +2 Science -->
+                            <div class="edu-card">
+                                <div class="edu-period">2020 – 2022</div>
+                                <h3 class="edu-degree">Higher Secondary Education (+2), Science</h3>
+                                <div class="edu-institution">United College</div>
+                                <div class="edu-affil">Kathmandu, Nepal</div>
+                                <p class="edu-notes">Major focus on Physics, Mathematics, and Computer Science laying the quantitative analytical groundwork for technical engineering.</p>
+                                <div class="edu-tags">
+                                    <span class="mini-tag">Science & Mathematics</span>
+                                    <span class="mini-tag">Kathmandu</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <div class="contact-banner">
+                    <div class="contact-banner-content">
+                        <span class="section-tag">[ 07 — CONTACT ]</span>
+                        <h2 class="contact-headline">Let's build defect-free software together.</h2>
+                        <p class="contact-subhead">
+                            Whether you need rigorous testing for a Core Banking application, automated regression frameworks, or high-throughput API load benchmarking, I am ready to contribute.
+                        </p>
+                    </div>
+
+                    <div class="contact-grid">
+                        <!-- Direct Contact Card -->
+                        <div class="contact-card primary-contact">
+                            <h3 class="contact-card-title">Direct Inquiries</h3>
+                            <p class="contact-card-desc">Reach out directly via email or phone. Expect a response within 24 hours.</p>
+
+                            <div class="contact-channels">
+                                <div class="channel-item">
+                                    <div class="channel-icon">
+                                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                            <polyline points="22,6 12,13 2,6"></polyline>
+                                        </svg>
+                                    </div>
+                                    <div class="channel-content">
+                                        <span class="channel-label">Email Address</span>
+                                        <a href="mailto:bhandaripujan321@gmail.com" class="channel-val">bhandaripujan321@gmail.com</a>
+                                    </div>
+                                    <button class="copy-icon-btn copy-btn" data-copy="bhandaripujan321@gmail.com" title="Copy email">
+                                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+
+                                <div class="channel-item">
+                                    <div class="channel-icon">
+                                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="channel-content">
+                                        <span class="channel-label">Phone & WhatsApp</span>
+                                        <a href="tel:+9779847363337" class="channel-val">+977 9847363337</a>
+                                    </div>
+                                    <button class="copy-icon-btn copy-btn" data-copy="+9779847363337" title="Copy phone number">
+                                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+
+                                <div class="channel-item">
+                                    <div class="channel-icon">
+                                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                            <circle cx="12" cy="10" r="3"></circle>
+                                        </svg>
+                                    </div>
+                                    <div class="channel-content">
+                                        <span class="channel-label">Current Location</span>
+                                        <span class="channel-val">Kirtipur, Kathmandu, Nepal</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contact-card-actions">
+                                <a href="mailto:bhandaripujan321@gmail.com?subject=QA%20Opportunity%20-%20Pujan%20Bhandari" class="btn btn-primary w-full">
+                                    <span>Send an Email</span>
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg>
+                                </a>
+                                <a href="QA CV.pdf" download="Pujan_Bhandari_QA_CV.pdf" class="btn btn-secondary w-full">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                        <polyline points="7 10 12 15 17 10"></polyline>
+                                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                                    </svg>
+                                    <span>Download QA CV (PDF)</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Interactive Quick Message Form -->
+                        <div class="contact-card message-box">
+                            <h3 class="contact-card-title">Send a Quick Message</h3>
+                            <p class="contact-card-desc">Fill out this quick form to generate a formatted email draft directly.</p>
+                            
+                            <form id="contactForm" class="contact-form">
+                                <div class="form-group">
+                                    <label for="senderName" class="form-label">Your Name</label>
+                                    <input type="text" id="senderName" name="name" class="form-input" placeholder="e.g. Jane Doe" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="senderSubject" class="form-label">Subject</label>
+                                    <input type="text" id="senderSubject" name="subject" class="form-input" placeholder="e.g. QA Opportunity / Project Discussion" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="senderMessage" class="form-label">Message</label>
+                                    <textarea id="senderMessage" name="message" rows="4" class="form-textarea" placeholder="Detail your project or role requirements..." required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-full">
+                                    <span>Generate Email Message</span>
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <span class="brand-monogram">PB</span>
+                    <span class="footer-name">Pujan Bhandari</span>
+                </div>
+                <p class="footer-tagline">Quality Assurance Engineer — Core Banking System (CBS) & FinTech Specialist</p>
+                <p class="footer-copy">&copy; 2026 Pujan Bhandari. Designed in monochrome aesthetic with precision.</p>
+            </div>
+
+            <div class="footer-right">
+                <div class="social-pills">
+                    <a href="https://github.com/pujan-bhandari12" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="GitHub Profile">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+                            <path d="M12 .5A12 12 0 0 0 8.2 23.6c.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.6-4-1.6-.5-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.9 1.3 1.9 1.3 1.1 1.9 2.9 1.4 3.6 1.1.1-.8.4-1.4.8-1.7-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.3-3.2-.1-.3-.6-1.6.1-3.2 0 0 1.1-.4 3.4 1.3a11.2 11.2 0 0 1 6.2 0c2.3-1.7 3.4-1.3 3.4-1.3.7 1.6.2 2.9.1 3.2.8.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5Z"/>
+                        </svg>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/pujan-bhandari-ba15b2175/" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="LinkedIn Profile">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+                            <path d="M6.94 8.5A1.56 1.56 0 1 1 6.94 5.4a1.56 1.56 0 0 1 0 3.1ZM5.5 9.8h2.9V18H5.5V9.8Zm4.7 0h2.77v1.13h.04c.38-.72 1.32-1.48 2.72-1.48 2.9 0 3.43 1.9 3.43 4.38V18h-2.9v-16.7c0-1.1-.02-2.52-1.54-2.52s-1.78 1.2-1.78 2.45V18h-2.9V9.8Z"/>
+                        </svg>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="mailto:bhandaripujan321@gmail.com" class="social-pill" aria-label="Send Email">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <span>Email</span>
+                    </a>
+                </div>
+
+                <a href="#hero" class="back-to-top" aria-label="Back to top">
+                    <span>Back to Top</span>
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <line x1="12" y1="19" x2="12" y2="5"></line>
+                        <polyline points="5 12 12 5 19 12"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification Container -->
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
